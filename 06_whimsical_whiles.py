@@ -27,7 +27,7 @@ Write a program that calculates the factorial of a given number using a while lo
 while True:
     n = 1
     factorial = 1
-    num=int(input("Enter number: "))
+    num=int(input("Enter number: ")) #Calculates the factorials
     if num<=0:
         print("Incorrect")
         break
@@ -47,7 +47,7 @@ guess = input("Guess the Password: ")
 
 while guess != password:
     print("Incorrect Password")
-    guess=input("Guess the Password: ")
+    guess=input("Guess the Password: ") #Lets user guess the password
 
     print("Correct")
     
@@ -73,7 +73,7 @@ b = 1
 sum = h + b 
 
 count = 1
-print("Fibonacci series is: ", end=" ")
+print("Fibonacci series is: ", end=" ") #Lets User enter a number and it prints the fibonacci sequence
 while (count <= n):
 	count += 1
 	print(h, end=" ")
