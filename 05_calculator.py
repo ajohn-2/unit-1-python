@@ -39,7 +39,7 @@ print("Please select operation: "
 
 
 # Take input from the user and does the operation
-select = int(input("Select operations form 1, 2, 3, 4, 5, 6, 7 : "))
+select = int(input("Select operations from 1, 2, 3, 4, 5, 6, 7 : "))
 
 if select == 1:
     print(number_1, "+", number_2, "=",
