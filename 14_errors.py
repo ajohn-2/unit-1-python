@@ -28,10 +28,15 @@ Example 2: Opening Files
 """
 
 def read_file(filename):
-    file = open(filename, 'r')
-    contents = file.read()
-    print("File contents:", contents)
-    file.close()
+    try:
+        file = open(filename, 'r')
+        contents = file.read()
+        print("File contents:", contents)
+        file.close()
+    except:
+        print("The file you used does not exist")
+    finally:
+        print("End of the program")
 
 # Example usage: read_file("nonexistent.txt")
  
@@ -82,6 +87,9 @@ def process_file(filename):
     except FileNotFoundError:
         print("Error: File not found.")
     else:
-        print("")
+        print("File accessed successfully")
+    finally:
+        print("End of example #5")
+
 
 # Example usage:process_file("example.txt")
